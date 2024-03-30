@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+body 
+{ font-family: Oswald, Gatham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 15px;
+  color: black;
+  margin:0 ; 
+      background: #E5F0EC
+}
+a{ color: black;
+text-decoration:none;
+    }
+a:hover{ color: #94DFB3}
+nav ul 
+{
+    list-style:none;
+    padding: 0;
+    display:flex;
+    justify-content: space-around  
+}
+/*-------style cho menu con-------*/
+nav ul li{position: relative}
+nav ul li ul{
+	position: absolute;
+	top:50%;
+	left:0;
+	flex-direction: column;
+	background: #E5F0EC;
+	width: 200%;
+	box-shadow: 0 0 5px #666;
+	transition: all 01s;
+	visibility:hidden;
+	z-index: 9999
+}
+nav ul li:hover ul{ top: 100%;
+    visibility: visible}
+.img-100{ width: 100%; height: auto}
+.text-star{color: #FFBA00}
+p { font-size: 15px}
+footer{
+	background: #323334;
+	padding: 50px 0;
+	color:#fff;
+}
+footer ul{
+	margin: 0; padding: 0; list-style: none
+	
+}
+footer a{
+	color:#fff;
+		padding: 5px 0;
+	display: block
+}
+.top-page{position: relative}
+.top-page .caption{position: absolute;
+	top:12%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
+	text-shadow: 1px 1px 5px #333
+	
